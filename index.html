@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bawarchi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bawarchi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dishes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Membership</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Recipe Master Logo">
+            </div>
+            <h1>Bawarchi- The Recipe Finder</h1>
+            <p>Khaoooo...pioooooo.....Aishhhh Karo Mitro.........</p><br>
+            <p>Enjoy the delicious South Indian & North Indian Dishes</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="recipe-form">
+                <label for="dish-type">Select Dish Type:</label>
+                <select id="dish-type" name="dish-type">
+                    <option value="south-indian">South Indian</option>
+                    <option value="north-indian">North Indian</option>
+                </select>
+                <label for="dish-name"></label>
+                <select id="dish-name" name="dish-name">
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <button type="submit">Get Recipe</button>
+            </form>
+            <div id="recipe-result" class="recipe-result">
+                <!-- Recipe will be displayed here -->
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="container">
+            <div class="owner-details">
+                <div class="contact-info">
+                    <p>&copy; 2024 Bawarchi. All rights reserved.</p>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</body>
+</html>
